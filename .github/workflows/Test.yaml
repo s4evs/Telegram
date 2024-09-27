@@ -14,12 +14,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Python
-        run: sudo apt-get update && sudo apt-get install python3 -y
-
-      - name: Install python requirements
-        run: sudo apt-get install python3-pip -y
-
       - name: Run Tgflood Script
         run: |
           pip install telethon
